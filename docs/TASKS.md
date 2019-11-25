@@ -193,23 +193,45 @@ The following questions are intended to be answered with written answers (no cod
 
 1. Which part is the file extension of the package.json file?
 
+    .json
+
 2. What does JSON stand for?
+
+    JavaScript Object Notation
 
 3. What is the purpose of JSON?
 
+  Storing & exchanging data
+
 4. What does the package.json file do?
+
+  References where to collect the data contained in the packages that you’re code is dependent on
+    - From Nodejs.org: "This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. It can also contain other metadata such as a project description, the version of the project in a particular distribution, license information, even configuration data - all of which can be vital to both npm and to the end users of the package. The package.json file is normally located at the root directory of a Node.js project."
 
 5. How do you install dependencies in a project after first cloning it from Github?
 
+    Run “npm install” in your terminal after cloning git repository
+
 6. What does "forking" mean in the context of Github?
+
+    Duplicate someones repository to create your own version
 
 7. What data types do you know?
 
+    Boolean, Number, String, Object, Array, Null, Undefined
+
 8. What is the difference between primitive and complex data types, and can you give examples of each?
+
+    Primitive = takes in single values, e.g. Boolean, String, Number, Undefined, Null
+    Complex = takes in multiple values and can be mutated, e.g. Object, Arrays
 
 9. What would be the best data type for representing whether a user is logged into the system or not?
 
+    Boolean
+
 10. How would you create a variable whose value could not be changed?
+
+    Using const
 
 11. What would be the outcome of running this code?
 
@@ -222,6 +244,7 @@ function sayHello(name) {
 
 sayHello("Sally");
 ```
+    - Hello, Sandra
 
 12. What would be the outcome of running this code?
 
@@ -237,8 +260,23 @@ const result = getFullname("Sally", "Jennings");
 console.log(fullName);
 ```
 
+    --not defined (need to console.log(result); Also note typo in the function call (change to camel case))
+
 13. If you wanted to see what dependencies were required in this project, where would you to to look for a list?
 
+    in the package.json file---
+        "devDependencies": {
+    "eslint": "^6.4.0",
+    "jest": "^24.5.0"
+  }
+  
 14. When you install dependencies, what directory is created?
 
+    node_modules
+
 15. How can you write comments in your code?
+
+    // line comment
+    /* multi line or part of a line comment */
+
+
